@@ -94,9 +94,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "insure burger burger" "menu menu menu";
     }
-    
+
     #navigation-menu #burger {
         display: none;
+    }
 
     navigation-menu #toggle-menu {
         display: none;
