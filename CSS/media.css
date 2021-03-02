@@ -22,7 +22,7 @@
         grid-template-areas: "insure burger" ". menu" "pattern pattern";
     }
 
-    #burger {
+    #navigation-menu #burger {
         display: none;
     }
 
