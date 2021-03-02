@@ -1,0 +1,343 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        min-width: 768px;
+        max-width: 1028px;
+    }
+
+    .the-content {
+        max-width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 3fr);
+        grid-template-areas: "hd" "main" "ft";
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-rows: 70px 500px;
+    }
+
+    #navigation-menu {
+        grid-template-areas: "insure burger" ". menu" "pattern pattern";
+    }
+
+    #burger {
+        display: none;
+    }
+
+    .header-background {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "h-img h-text";
+    }
+
+    .pattern-right-mobile {
+        display: none;
+    }
+
+    main {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .product-information {
+        flex-direction: row;
+        padding: 0 15px;
+        align-items: unset;
+    }
+
+    .main-info {
+        padding: 20px;
+        text-align: unset;
+    }
+
+    .banner {
+        height: unset;
+        width: 100%;
+        margin: unset;
+        padding: 15px 0px;
+    }
+
+    .pattern-banner {
+        width: 95%;
+        height: 250px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        min-width: 1024px;
+        max-width: 1440px;
+    }
+
+    .the-content {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "hd hd hd hd hd hd hd hd hd hd hd hd" "main main main main main main main main main main main main" "ft ft ft ft ft ft ft ft ft ft ft ft";
+        margin: 0 auto;
+    }
+
+    header {
+        display: grid;
+        grid-area: hd;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 70px 500px;
+        grid-template-areas: "nav nav nav nav nav nav" "info info info info info info";
+    }
+
+    #navigation-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "insure burger burger" "menu menu menu";
+    }
+
+    navigation-menu #toggle-menu {
+        display: none;
+    }
+
+    nav #overlay-content {
+        display: flex;
+        justify-content: flex-end;
+        grid-area: burger;
+        padding: 0px;
+        background-color: inherit;
+        height: unset;
+        align-items: center;
+        margin: 0px;
+        position: relative;
+    }
+
+    #overlay-content a {
+        color: hsl(273, 4%, 51%);
+        padding: 8px 20px;
+    }
+
+    #overlay-content a:hover {
+        color: hsl(270, 9%, 17%);
+    }
+
+    #overlay-content #view-plans:hover, #overlay-content #view-plans a:hover {
+        background-color: hsl(270, 9%, 17%);
+        color: hsl(0, 0%, 98%);
+    }
+
+    #header-info a:hover, #overlay-content #view-plans:hover {
+        transition: 0.3s;
+    }
+
+    #overlay-content #view-plans {
+        margin: 0;
+        width: unset;
+        border: 1px solid hsl(256, 26%, 20%);
+    }
+
+    .nav-pattern {
+        display: none;
+    }
+
+    #header-background {
+        background-color: hsl(256, 26%, 20%);
+        width: 120%;
+        grid-area: info;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "text text text text text text photo photo photo photo photo photo";
+        justify-self: center;
+    }
+
+    #header-photo {
+        grid-area: photo;
+        position: relative;
+        margin: 90px 0 -120px 0;
+        background-size: contain;
+        background-position: inherit;
+    }
+
+    #header-info {
+        grid-area: text;
+        margin: 50px 60px 50px 110px;
+        text-align: unset;
+        align-items: unset;
+    }
+
+    #header-info p {
+        margin: 0px;
+        padding: 15px 0px;
+    }
+
+    #header-info a {
+        margin: 15px 0px;
+        width: 130px;
+        height: 20px;
+        padding: 10px;
+    }
+
+    .pattern-left-mobile, .pattern-right-mobile {
+        display: none;
+    }
+
+    .header-pattern-right {
+        grid-area: photo;
+        background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+        background-size: contain;
+        background-position: 100% -60px;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header-pattern-left {
+        background-image: url("/images/bg-pattern-intro-left-desktop.svg");
+        grid-area: text;
+        position: relative;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        margin: 370px 0 -250px 0;
+    }
+
+    .pattern-banner {
+        background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-position: right;
+    }
+
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 400px 250px 370px;
+        grid-template-areas: "h2 h2 h2 h2 h2 . . . . . . . " "product-info product-info product-info product-info product-info product-info product-info product-info product-info product-info product-info product-info" "bnr bnr bnr bnr bnr bnr bnr bnr bnr bnr bnr bnr";
+    }
+
+    .main-heading {
+        grid-area: h2;
+        justify-content: unset;
+        padding: 20px;
+        align-items: flex-end;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .product-information {
+        grid-area: product-info;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .main-info {
+        text-align: unset;
+    }
+
+    tag {
+        grid-area: bnr;
+        padding: 20px;
+    }
+
+    #banner {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: ".name name name name name name button button button button button";
+        position: relative;
+        margin: 10px 0px;
+    }
+
+    #banner h4 {
+        font-size: 45px;
+        grid-area: name;
+        color: hsl(0, 0%, 98%);
+        text-align: unset;
+    }
+
+    tag a {
+        grid-area: button;
+    }
+
+    footer {
+        margin: 20px -110px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-rows: 100px 300px;
+        grid-template-columns: inherit;
+        grid-template-areas: "icon icon icon icon icon icon icon icon icon icon icon icon" "help help help help help help help help help help help help";
+        margin: 0 110px;
+        text-align: unset;
+        padding: 20px;
+    }
+
+    .about {
+        grid-area: help / help / help / help;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        width: 100%;
+    }
+
+    .social {
+        grid-area: icon;
+        display: grid;
+        border-bottom: 1px solid hsl(273, 4%, 51%, 0.5);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "insure insure . . . s-ic";
+        width: 100%;
+        padding: 0px;
+    }
+
+    .social-icons {
+        grid-area: s-ic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icon {
+        grid-area: insure;
+        float: left;
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        padding: 0px;
+    }
+
+    .footer-li {
+        padding: 10px 40px;
+        flex-grow: 1;
+    }
+
+    .footer-li-1 {
+        padding: 10px 10px 10px 0px;
+    }
+
+    h1 {
+        margin: 60px 0px 0px 0px;
+    }
+
+    h2 {
+        text-align: initial;
+    }
+
+    h1::before, h2::before {
+        margin: 0px 0px 40px 0px;
+    }
+    
+    h1::before {
+        width: 100px;
+        height: 1px;
+        content: "";
+        background-color: hsl(273, 4%, 51%);
+        display: block;
+    }
+}
