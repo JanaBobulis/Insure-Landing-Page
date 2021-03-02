@@ -31,13 +31,13 @@ main {
     padding: 0px 10px;
 }
 
-tag {
+.tag {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-tag a, .header-info a {
+.tag a, .header-info a {
     margin: 15px auto;
     letter-spacing: 1px;
     cursor: pointer;
