@@ -22,10 +22,6 @@
         grid-template-areas: "insure burger" ". menu" "pattern pattern";
     }
 
-    #navigation-menu #burger {
-        display: none;
-    }
-
     .header-background {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -98,6 +94,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "insure burger burger" "menu menu menu";
     }
+    
+    #navigation-menu #burger {
+        display: none;
 
     navigation-menu #toggle-menu {
         display: none;
