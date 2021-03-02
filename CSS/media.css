@@ -240,7 +240,7 @@
         text-align: unset;
     }
 
-    tag {
+    .tag {
         grid-area: bnr;
         padding: 20px;
     }
@@ -260,7 +260,7 @@
         text-align: unset;
     }
 
-    tag a {
+    .tag a {
         grid-area: button;
     }
 
