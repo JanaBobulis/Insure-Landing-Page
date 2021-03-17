@@ -7,7 +7,7 @@ body {
 }
 
 .the-content {
-  max-width: 95%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(1, 3fr);
