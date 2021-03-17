@@ -145,7 +145,7 @@
 
     #header-background {
         background-color: hsl(256, 26%, 20%);
-        width: 120%;
+        width: 115%;
         grid-area: info;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr;
