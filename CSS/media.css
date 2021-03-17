@@ -90,6 +90,10 @@
         grid-template-areas: "nav nav nav nav nav nav" "info info info info info info";
         margin: 0px 40px; 
     }
+    
+    main {
+        margin: 0px 40px;
+    }
 
     #navigation-menu {
         grid-template-columns: 1fr 1fr 1fr;
