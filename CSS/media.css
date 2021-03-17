@@ -5,7 +5,7 @@
     }
 
     .the-content {
-        max-width: 95%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1, 3fr);
@@ -74,7 +74,7 @@
     }
 
     .the-content {
-        max-width: 80%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
