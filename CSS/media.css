@@ -88,6 +88,7 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 70px 500px;
         grid-template-areas: "nav nav nav nav nav nav" "info info info info info info";
+        margin: 0px 40px; 
     }
 
     #navigation-menu {
